@@ -10,30 +10,31 @@
             padding: 0;
             width: 100%;
             height: 100%;
-            overflow-x: hidden;
-            overflow-y: auto;
+            overflow: hidden;
         }
         .canva-container {
+            position: relative;
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            height: 100%;
+            overflow: hidden;
         }
         iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
+            height: 100%;
             border: none;
-            display: block;
         }
     </style>
 </head>
 <body>
     <div class="canva-container">
-        <iframe src="https://www.canva.com/design/DAGLJBmQ2ZA/FSGeGMZSY8AIEk6WCLpVPA/view?embed&page=1" allowfullscreen="allowfullscreen" allow="fullscreen" style="height: 100vh;"></iframe>
-        <iframe src="https://www.canva.com/design/DAGLJBmQ2ZA/FSGeGMZSY8AIEk6WCLpVPA/view?embed&page=2" allowfullscreen="allowfullscreen" allow="fullscreen" style="height: 100vh;"></iframe>
-        <iframe src="https://www.canva.com/design/DAGLJBmQ2ZA/FSGeGMZSY8AIEk6WCLpVPA/view?embed&page=3" allowfullscreen="allowfullscreen" allow="fullscreen" style="height: 100vh;"></iframe>
-        <iframe src="https://www.canva.com/design/DAGLJBmQ2ZA/FSGeGMZSY8AIEk6WCLpVPA/view?embed&page=4" allowfullscreen="allowfullscreen" allow="fullscreen" style="height: 100vh;"></iframe>
-        <iframe src="https://www.canva.com/design/DAGLJBmQ2ZA/FSGeGMZSY8AIEk6WCLpVPA/view?embed&page=5" allowfullscreen="allowfullscreen" allow="fullscreen" style="height: 100vh;"></iframe>
-        <iframe src="https://www.canva.com/design/DAGLJBmQ2ZA/FSGeGMZSY8AIEk6WCLpVPA/view?embed&page=6" allowfullscreen="allowfullscreen" allow="fullscreen" style="height: 100vh;"></iframe>
+        <iframe loading="lazy"
+            src="https://www.canva.com/design/DAGLJBmQ2ZA/FSGeGMZSY8AIEk6WCLpVPA/view?embed"
+            allowfullscreen="allowfullscreen"
+            allow="fullscreen">
+        </iframe>
     </div>
 </body>
 </html>
