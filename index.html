@@ -6,7 +6,6 @@
     <title>Mundo da Inovação</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Oswald:wght@700&family=Black+Ming+He:ital,wght@0,400;1,400&display=swap">
     <style>
-        /* Define a aparência geral da página */
         body, html {
             margin: 0;
             padding: 0;
@@ -20,10 +19,9 @@
             justify-content: center;
             align-items: center;
             box-sizing: border-box;
-            white-space: nowrap; /* Evita quebras de texto em toda a página */
+            white-space: nowrap;
         }
 
-        /* Estiliza o cabeçalho, incluindo a logo */
         header {
             position: absolute;
             top: 20px;
@@ -34,20 +32,30 @@
             width: 150px;
         }
 
-        /* Define a aparência da imagem de fundo */
         .background-image {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('fundo.png') no-repeat center center;
+            background: url('https://raw.githubusercontent.com/usuario/repo/branch/caminho/para/imagem.png') no-repeat center center;
             background-size: cover;
             z-index: -1;
-            opacity: 1; /* Garante que a imagem de fundo esteja visível */
+            opacity: 1;
         }
 
-        /* Define a posição e o estilo do texto sobreposto */
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 1;
+            display: none; /* Ocultar o vídeo por padrão */
+        }
+
         .overlay {
             position: absolute;
             top: 50%;
@@ -55,55 +63,61 @@
             transform: translate(-50%, -50%);
             text-align: center;
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-            max-width: 90%; /* Garante que o texto não ultrapasse a largura da tela */
+            max-width: 90%;
         }
 
-        /* Estiliza o texto principal de boas-vindas */
         .welcome-text {
-            font-family: 'Black Ming He', sans-serif; /* Alterado para Black Ming */
-            font-size: 98px; /* Aumento do tamanho do texto */
+            font-family: 'Black Ming He', sans-serif;
+            font-size: 98px;
             margin: 0;
-            color: rgb(255, 127, 48); /* Cor laranja sem transparência */
+            color: rgb(255, 127, 48);
             text-transform: uppercase;
-            white-space: nowrap; /* Evita quebra de texto */
+            white-space: nowrap;
         }
 
-        /* Estiliza o texto secundário (subtítulo) */
         .subtext {
             font-family: 'Oswald', sans-serif;
             font-size: 50px;
             margin: 0;
-            color: rgb(255, 127, 48); /* Cor laranja sem transparência */
+            color: rgb(255, 127, 48);
             text-transform: uppercase;
-            white-space: nowrap; /* Evita quebra de texto */
+            white-space: nowrap;
         }
 
-        /* Estiliza o container dos botões */
         .buttons {
-            margin-top: 80px; /* Aumento do espaçamento entre o texto e os botões */
+            margin-top: 80px;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap; /* Permite que os botões se ajustem em múltiplas linhas, se necessário */
-            gap: 20px; /* Espaçamento entre botões */
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
-        /* Estiliza os botões */
         .buttons button {
             background: #fff;
             border: none;
-            padding: 10px 20px; /* Ajuste o padding para se adequar ao tamanho do texto */
-            font-size: 16px; /* Ajuste o tamanho da fonte para os botões */
+            padding: 10px 20px;
+            font-size: 16px;
             cursor: pointer;
             transition: background 0.3s ease, color 0.3s ease;
             border-radius: 25px;
             color: #000;
-            white-space: nowrap; /* Garante que o texto do botão não quebre */
+            white-space: nowrap;
         }
 
-        /* Estiliza o efeito de hover dos botões */
         .buttons button:hover {
             background: rgb(255, 127, 48);
             color: #000;
+        }
+
+        /* Mostrar o vídeo se suportado */
+        @supports (object-fit: cover) {
+            .background-image {
+                display: none;
+            }
+
+            .background-video {
+                display: block;
+            }
         }
     </style>
 </head>
@@ -112,14 +126,15 @@
         <img src="Logo.png" alt="Logo Mundo da Inovação" class="logo">
     </header>
     <main>
-        <!-- Imagem de fundo -->
         <div class="background-image"></div>
+        <video class="background-video" autoplay muted loop>
+            <source src="https://raw.githubusercontent.com/usuario/repo/branch/caminho/para/video.mp4" type="video/mp4">
+            Seu navegador não suporta o vídeo.
+        </video>
         <div class="overlay">
-            <!-- Texto de boas-vindas -->
             <h1 class="welcome-text">Bem-vindo</h1>
             <h1 class="subtext">ao</h1>
             <h3 class="welcome-text">Mundo da Inovação</h3>
-            <!-- Botões de navegação -->
             <div class="buttons">
                 <button onclick="window.location.href='pagina1.html'">Automações</button>
                 <button onclick="window.location.href='pagina2.html'">Campanhas Eleitorais</button>
@@ -129,17 +144,12 @@
         </div>
     </main>
     <script>
-        // Seleciona todos os botões dentro da classe 'buttons'
         document.querySelectorAll('.buttons button').forEach(button => {
-            // Adiciona um evento de mouseover a cada botão
             button.addEventListener('mouseover', () => {
-                // Quando o mouse passa sobre o botão, ele aumenta de tamanho
                 button.style.transform = 'scale(1.1)';
             });
 
-            // Adiciona um evento de mouseout a cada botão
             button.addEventListener('mouseout', () => {
-                // Quando o mouse sai do botão, ele volta ao tamanho original
                 button.style.transform = 'scale(1)';
             });
         });
