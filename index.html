@@ -26,13 +26,14 @@
             width: 150px;
         }
 
-        .background-video {
+        .background-gif {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            background: url('fundo.gif') no-repeat center center;
+            background-size: cover;
             z-index: -1;
         }
 
@@ -44,6 +45,18 @@
             text-align: center;
             color: white;
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .welcome-text {
+            font-size: 48px;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .subtext {
+            font-size: 24px;
+            margin: 0;
+            animation: fadeIn 4s ease-in-out;
         }
 
         .buttons button {
@@ -69,10 +82,6 @@
                 opacity: 1;
             }
         }
-
-        .overlay {
-            animation: fadeIn 2s ease-in-out;
-        }
     </style>
 </head>
 <body>
@@ -80,12 +89,14 @@
         <img src="Logo.png" alt="Logo Mundo da Inovação" class="logo">
     </header>
     <main>
+        <div class="background-gif"></div>
         <div class="overlay">
-            <h1>Bem-vindo ao Mundo da Inovação</h1>
+            <h1 class="welcome-text">Bem-vindo</h1>
+            <h2 class="subtext">ao Mundo da Inovação</h2>
             <div class="buttons">
                 <button onclick="window.location.href='pagina1.html'">Automações</button>
                 <button onclick="window.location.href='pagina2.html'">Campanhas Eleitorais</button>
-                <button onclick="window.location.href='pagina3.html'">Projetos Arquitetonicos</button>
+                <button onclick="window.location.href='pagina3.html'">Projetos Arquitetônicos</button>
             </div>
         </div>
     </main>
