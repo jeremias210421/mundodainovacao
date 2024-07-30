@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo da Inovação</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Oswald:wght@700&display=swap">
     <style>
         body, html {
             margin: 0;
@@ -47,31 +47,38 @@
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
         }
 
-        .welcome-text {
+        .welcome-text, .subtext {
+            font-family: 'Oswald', sans-serif;
             font-size: 50px;
             margin: 0;
-            color: rgba(255, 165, 0, 0.75);
+            color: rgb(255, 127, 48);
+            text-transform: uppercase;
         }
 
         .subtext {
             font-size: 36px;
             margin: 0;
-            color: rgba(255, 165, 0, 0.75);
+        }
+
+        .buttons {
+            margin-top: 30px;
         }
 
         .buttons button {
-            background: rgba(255, 165, 0, 0.75);
+            background: #fff;
             border: none;
             padding: 10px 20px;
             margin: 10px;
             font-size: 16px;
             cursor: pointer;
-            transition: background 0.3s ease;
+            transition: background 0.3s ease, color 0.3s ease;
             border-radius: 25px;
+            color: #000;
         }
 
         .buttons button:hover {
-            background: rgba(255, 255, 255, 1);
+            background: rgb(255, 127, 48);
+            color: #000;
         }
     </style>
 </head>
@@ -89,6 +96,7 @@
                 <button onclick="window.location.href='pagina1.html'">Automações</button>
                 <button onclick="window.location.href='pagina2.html'">Campanhas Eleitorais</button>
                 <button onclick="window.location.href='pagina3.html'">Projetos Arquitetônicos</button>
+                <button onclick="window.location.href='pagina4.html'">Criar Site</button>
             </div>
         </div>
     </main>
