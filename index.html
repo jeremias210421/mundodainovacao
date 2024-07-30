@@ -53,6 +53,7 @@
             color: rgb(255, 127, 48);
             text-transform: uppercase;
             white-space: nowrap;
+            position: relative;
         }
 
         .subtext {
@@ -61,6 +62,19 @@
             color: rgb(255, 127, 48);
             text-transform: uppercase;
             white-space: nowrap;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid rgb(255, 127, 48);
+            position: absolute;
+            top: -120px; /* Ajuste conforme necessário */
+            left: 50%; /* Alinhado ao centro do texto */
+            transform: translateX(-50%);
+            z-index: -1;
         }
 
         .buttons {
@@ -94,6 +108,7 @@
     </header>
     <main>
         <div class="overlay">
+            <div class="triangle"></div>
             <h1 class="welcome-text">Bem-vindo</h1>
             <h1 class="subtext">ao</h1>
             <h3 class="welcome-text">Mundo da Inovação</h3>
