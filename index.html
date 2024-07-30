@@ -12,7 +12,7 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            font-family: 'Black Ming', sans-serif;
+            font-family: 'Poppins', sans-serif;
             background: #000;
             color: #fff;
         }
@@ -33,7 +33,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: img src="fundo.png"  no-repeat center center;
+            background: url('fundo.png') no-repeat center center;
             background-size: cover;
             z-index: -1;
         }
@@ -47,30 +47,33 @@
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
         }
 
-        .welcome-text, .subtext {
+        .welcome-text {
             font-family: 'Oswald', sans-serif;
-            font-size: 70px;
+            font-size: 98px; /* Aumento de aproximadamente 40% */
             margin: 0;
             color: rgb(255, 127, 48);
             text-transform: uppercase;
         }
 
         .subtext {
+            font-family: 'Oswald', sans-serif;
             font-size: 50px;
             margin: 0;
+            color: rgb(255, 127, 48);
+            text-transform: uppercase;
         }
 
         .buttons {
-            margin-top: 50px;
+            margin-top: 100px; /* Aumento do espaçamento entre o texto e os botões */
             display: flex;
             justify-content: center;
+            gap: 20px; /* Espaçamento entre botões */
         }
 
         .buttons button {
             background: #fff;
             border: none;
             padding: 10px 20px;
-            margin: 10px;
             font-size: 16px;
             cursor: pointer;
             transition: background 0.3s ease, color 0.3s ease;
@@ -103,12 +106,17 @@
         </div>
     </main>
     <script>
+        // Seleciona todos os botões dentro da classe 'buttons'
         document.querySelectorAll('.buttons button').forEach(button => {
+            // Adiciona um evento de mouseover a cada botão
             button.addEventListener('mouseover', () => {
+                // Quando o mouse passa sobre o botão, ele aumenta de tamanho
                 button.style.transform = 'scale(1.1)';
             });
 
+            // Adiciona um evento de mouseout a cada botão
             button.addEventListener('mouseout', () => {
+                // Quando o mouse sai do botão, ele volta ao tamanho original
                 button.style.transform = 'scale(1)';
             });
         });
