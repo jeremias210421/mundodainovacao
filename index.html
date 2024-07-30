@@ -17,7 +17,7 @@
             height: 100%;
             overflow: hidden;
             font-family: 'Oswald', sans-serif;
-            background: #000;
+            background: #000; /* Fundo preto */
             color: #fff;
             display: flex;
             justify-content: center;
@@ -36,30 +36,6 @@
             width: 150px;
         }
 
-        .background-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('Cópia de Black Oranye Archetype Inspired Logo (500 x 500 px) (1).png') no-repeat center center;
-            background-size: cover;
-            z-index: -1;
-            opacity: 1;
-        }
-
-        .background-video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-            opacity: 1;
-            display: none; /* Ocultar o vídeo por padrão */
-        }
-
         .overlay {
             position: absolute;
             top: 50%;
@@ -68,6 +44,7 @@
             text-align: center;
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
             max-width: 90%;
+            z-index: 1;
         }
 
         .welcome-text {
@@ -90,15 +67,14 @@
             margin-top: 80px;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
             gap: 20px;
         }
 
         .buttons button {
             background: #fff;
             border: none;
-            padding: 10px 20px;
-            font-size: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
             cursor: pointer;
             transition: background 0.3s ease, color 0.3s ease;
             border-radius: 25px;
@@ -110,17 +86,6 @@
             background: rgb(255, 127, 48);
             color: #000;
         }
-
-        /* Mostrar o vídeo se suportado */
-        @supports (object-fit: cover) {
-            .background-image {
-                display: none;
-            }
-
-            .background-video {
-                display: block;
-            }
-        }
     </style>
 </head>
 <body>
@@ -128,11 +93,6 @@
         <img src="Logo.png" alt="Logo Mundo da Inovação" class="logo">
     </header>
     <main>
-        <div class="background-image"></div>
-        <video class="background-video" autoplay muted loop>
-            <source src="Cópia de Black Oranye Archetype Inspired Logo (500 x 500 px) (1).png" type="video/mp4">
-            Seu navegador não suporta o vídeo.
-        </video>
         <div class="overlay">
             <h1 class="welcome-text">Bem-vindo</h1>
             <h1 class="subtext">ao</h1>
