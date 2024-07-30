@@ -19,7 +19,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            /* Garante que o conteúdo use toda a largura da tela */
             box-sizing: border-box;
         }
 
@@ -55,6 +54,7 @@
             transform: translate(-50%, -50%);
             text-align: center;
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            max-width: 90%; /* Garante que o texto não ultrapasse a largura da tela */
         }
 
         /* Estiliza o texto principal de boas-vindas */
@@ -77,9 +77,10 @@
 
         /* Estiliza o container dos botões */
         .buttons {
-            margin-top: 60px; /* Aumento do espaçamento entre o texto e os botões */
+            margin-top: 80px; /* Aumento do espaçamento entre o texto e os botões */
             display: flex;
             justify-content: center;
+            flex-wrap: wrap; /* Permite que os botões se ajustem em múltiplas linhas, se necessário */
             gap: 20px; /* Espaçamento entre botões */
         }
 
@@ -87,12 +88,13 @@
         .buttons button {
             background: #fff;
             border: none;
-            padding: 15px 30px; /* Aumento do padding para melhorar a aparência dos botões */
-            font-size: 18px; /* Aumento do tamanho da fonte dos botões */
+            padding: 10px 20px; /* Ajuste o padding para se adequar ao tamanho do texto */
+            font-size: 16px; /* Ajuste o tamanho da fonte para os botões */
             cursor: pointer;
             transition: background 0.3s ease, color 0.3s ease;
             border-radius: 25px;
             color: #000;
+            white-space: nowrap; /* Garante que o texto do botão não quebre */
         }
 
         /* Estiliza o efeito de hover dos botões */
