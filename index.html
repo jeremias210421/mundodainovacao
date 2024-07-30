@@ -67,13 +67,15 @@
         .triangle {
             width: 0;
             height: 0;
-            border-left: 150px solid transparent;
+            border-left: 100px solid transparent;
             border-right: 0 solid transparent;
             border-bottom: 300px solid rgb(255, 127, 48);
             position: absolute;
-            top: 0;
-            right: 0;
+            /* Ajuste o posicionamento conforme necessário */
+            top: 0px; /* Altere o valor para ajustar a posição vertical */
+            right: 0px; /* Altere o valor para ajustar a posição horizontal */
             transform: rotate(180deg); /* Gira o triângulo 180 graus */
+            transform-origin: 0 0; /* Define o ponto de origem para a rotação */
             z-index: 0;
         }
 
@@ -108,7 +110,7 @@
     </header>
     <main>
         <div class="overlay">
-            <div class="triangle"></div>
+            <div class="triangle"></div> <!-- Triângulo posicionado -->
             <h1 class="welcome-text">Bem-vindo</h1>
             <h1 class="subtext">ao</h1>
             <h3 class="welcome-text">Mundo da Inovação</h3>
