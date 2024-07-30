@@ -15,6 +15,9 @@
             font-family: 'Poppins', sans-serif;
             background: #000;
             color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         header {
@@ -36,20 +39,21 @@
             background: url('fundo.png') no-repeat center center;
             background-size: cover;
             z-index: -1;
+            opacity: 1; /* Garante que a imagem de fundo esteja visível */
         }
 
         .overlay {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -60%);
+            transform: translate(-50%, -50%);
             text-align: center;
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
         }
 
         .welcome-text {
             font-family: 'Oswald', sans-serif;
-            font-size: 98px; /* Aumento de aproximadamente 40% */
+            font-size: 98px; /* Aumento do tamanho do texto */
             margin: 0;
             color: rgb(255, 127, 48);
             text-transform: uppercase;
@@ -64,7 +68,7 @@
         }
 
         .buttons {
-            margin-top: 100px; /* Aumento do espaçamento entre o texto e os botões */
+            margin-top: 60px; /* Aumento do espaçamento entre o texto e os botões */
             display: flex;
             justify-content: center;
             gap: 20px; /* Espaçamento entre botões */
@@ -73,8 +77,8 @@
         .buttons button {
             background: #fff;
             border: none;
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 15px 30px; /* Aumento do padding para melhorar a aparência dos botões */
+            font-size: 18px; /* Aumento do tamanho da fonte dos botões */
             cursor: pointer;
             transition: background 0.3s ease, color 0.3s ease;
             border-radius: 25px;
