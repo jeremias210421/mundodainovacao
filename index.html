@@ -6,6 +6,7 @@
     <title>Mundo da Inovação</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Oswald:wght@700&display=swap">
     <style>
+        /* Define a aparência geral da página */
         body, html {
             margin: 0;
             padding: 0;
@@ -18,8 +19,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            /* Garante que o conteúdo use toda a largura da tela */
+            box-sizing: border-box;
         }
 
+        /* Estiliza o cabeçalho, incluindo a logo */
         header {
             position: absolute;
             top: 20px;
@@ -30,6 +34,7 @@
             width: 150px;
         }
 
+        /* Define a aparência da imagem de fundo */
         .background-image {
             position: absolute;
             top: 0;
@@ -42,15 +47,17 @@
             opacity: 1; /* Garante que a imagem de fundo esteja visível */
         }
 
+        /* Define a posição e o estilo do texto sobreposto */
         .overlay {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(0, 0);
+            transform: translate(-50%, -50%);
             text-align: center;
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
         }
 
+        /* Estiliza o texto principal de boas-vindas */
         .welcome-text {
             font-family: 'Oswald', sans-serif;
             font-size: 98px; /* Aumento do tamanho do texto */
@@ -59,6 +66,7 @@
             text-transform: uppercase;
         }
 
+        /* Estiliza o texto secundário (subtítulo) */
         .subtext {
             font-family: 'Oswald', sans-serif;
             font-size: 50px;
@@ -67,6 +75,7 @@
             text-transform: uppercase;
         }
 
+        /* Estiliza o container dos botões */
         .buttons {
             margin-top: 60px; /* Aumento do espaçamento entre o texto e os botões */
             display: flex;
@@ -74,6 +83,7 @@
             gap: 20px; /* Espaçamento entre botões */
         }
 
+        /* Estiliza os botões */
         .buttons button {
             background: #fff;
             border: none;
@@ -85,6 +95,7 @@
             color: #000;
         }
 
+        /* Estiliza o efeito de hover dos botões */
         .buttons button:hover {
             background: rgb(255, 127, 48);
             color: #000;
@@ -96,11 +107,14 @@
         <img src="Logo.png" alt="Logo Mundo da Inovação" class="logo">
     </header>
     <main>
+        <!-- Imagem de fundo -->
         <div class="background-image"></div>
         <div class="overlay">
+            <!-- Texto de boas-vindas -->
             <h1 class="welcome-text">Bem-vindo</h1>
             <h1 class="subtext">ao</h1>
             <h3 class="welcome-text">Mundo da Inovação</h3>
+            <!-- Botões de navegação -->
             <div class="buttons">
                 <button onclick="window.location.href='pagina1.html'">Automações</button>
                 <button onclick="window.location.href='pagina2.html'">Campanhas Eleitorais</button>
