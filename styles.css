@@ -5,7 +5,7 @@ body, html {
     height: 100%;
     overflow: hidden;
     font-family: 'Roboto', sans-serif;
-    background-color: #ffa500; /* Cor de fundo laranja */
+    background-color: #ff7f30; /* Cor de fundo laranja */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@ header {
 }
 
 .logo {
-    width: 150px;
+    width: 400px;
 }
 
 .overlay {
@@ -33,7 +33,7 @@ header {
 }
 
 .icon {
-    font-size: 100px;
+    font-size: 400px;
     color: #fff; /* Cor do ícone */
 }
 
