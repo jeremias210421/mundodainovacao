@@ -84,8 +84,8 @@ section {
     transform: translateX(-50%);
     width: 100%;
     text-align: center;
-    padding: 20px;
-    font-size: 14px;
+    padding: 10px;
+    font-size: 10px;
     color: #fff; /* Cor do texto do rodapé */
     background: #000; /* Cor de fundo do rodapé */
     box-sizing: border-box;
