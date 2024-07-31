@@ -1,0 +1,94 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    background: url('caminho/para/sua-imagem-de-fundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    max-width: 90%;
+    z-index: 1;
+}
+
+.welcome-text, .subtext {
+    margin: 0;
+    color: rgb(255, 127, 48);
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: relative;
+}
+
+.welcome-text {
+    font-size: 70px;
+}
+
+.subtext {
+    font-size: 40px;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.buttons button {
+    background: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    border-radius: 25px;
+    color: #000;
+}
+
+.buttons button:hover {
+    background: rgb(255, 127, 48);
+    color: #000;
+    transform: scale(1.1);
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.footer a {
+    color: rgb(255, 127, 48);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
