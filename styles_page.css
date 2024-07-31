@@ -16,8 +16,8 @@ body, html {
     max-width: 120px; /* Limita o tamanho máximo */
     height: auto; /* Mantém a proporção da imagem */
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 2%; /* Ajusta a posição a partir do topo */
+    left: 2%; /* Ajusta a posição a partir da esquerda */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,12 +27,12 @@ body, html {
 /* Estilização dos botões na parte superior */
 .buttons {
     position: fixed;
-    top: 20px;
+    top: 2%; /* Ajusta a posição a partir do topo */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 2%; /* Espaçamento entre os botões em porcentagem */
     flex-wrap: wrap; /* Permite que os botões se movam para a linha abaixo em telas menores */
     z-index: 1;
 }
@@ -40,14 +40,14 @@ body, html {
 .buttons button {
     background: #000;
     border: none;
-    padding: 12px 30px;
+    padding: 1.2% 3%; /* Ajusta o padding para porcentagens */
     font-size: 1rem; /* Unidades relativas */
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 25px;
     color: #fff;
     white-space: nowrap;
-    min-width: 120px;
+    min-width: 12%; /* Largura mínima em porcentagem */
     text-align: center;
 }
 
@@ -59,13 +59,13 @@ body, html {
 
 /* Estiliza o conteúdo principal */
 main {
-    padding: 20px;
+    padding: 2%; /* Ajusta o padding para porcentagens */
 }
 
 /* Centraliza o texto "Campanhas Eleitorais" */
 .centralizado {
     text-align: center;
-    margin-top: 120px; /* Espaço acima do conteúdo */
+    margin-top: 12%; /* Ajusta o espaço acima do conteúdo em porcentagem */
 }
 
 .centralizado h1 {
@@ -75,7 +75,7 @@ main {
 
 /* Estilização das seções */
 section {
-    margin-bottom: 40px;
+    margin-bottom: 4%; /* Espaço entre as seções em porcentagem */
 }
 
 /* Estilo do rodapé */
@@ -91,60 +91,115 @@ section {
 
 /* Media Queries para diferentes tamanhos de tela */
 
-/* Para telas médias (tablets) */
-@media (max-width: 768px) {
+/* Para telas grandes (desktops) */
+@media (min-width: 1200px) {
     .logo {
-        width: 15%; /* Ajusta o tamanho da logo */
-        max-width: 100px; /* Limita o tamanho máximo */
-        top: 10px; /* Ajusta a posição */
-        left: 10px;
+        width: 8%; /* Ajusta o tamanho da logo para grandes telas */
     }
 
     .buttons {
-        top: 80px; /* Ajusta a posição dos botões */
-        gap: 15px; /* Reduz o espaçamento */
-        flex-direction: column; /* Empilha verticalmente */
+        top: 2%;
+        gap: 2%;
     }
 
     .buttons button {
-        padding: 10px 20px;
-        font-size: 0.875rem; /* Ajusta o tamanho da fonte */
-        min-width: 100px;
+        padding: 1.2% 3%;
+        font-size: 1rem;
     }
 
     .centralizado {
-        margin-top: 80px; /* Ajusta o espaço acima do conteúdo */
+        margin-top: 12%;
     }
 
     .centralizado h1 {
-        font-size: 1.75rem; /* Ajusta o tamanho da fonte do título */
+        font-size: 2rem;
+    }
+}
+
+/* Para telas médias (tablets) */
+@media (max-width: 1200px) and (min-width: 768px) {
+    .logo {
+        width: 12%;
+        max-width: 100px;
+        top: 1.5%;
+        left: 1.5%;
+    }
+
+    .buttons {
+        top: 7%;
+        gap: 1.5%;
+        flex-direction: column;
+    }
+
+    .buttons button {
+        padding: 1% 2%;
+        font-size: 0.875rem;
+        min-width: 10%;
+    }
+
+    .centralizado {
+        margin-top: 8%;
+    }
+
+    .centralizado h1 {
+        font-size: 1.75rem;
     }
 }
 
 /* Para telas pequenas (smartphones) */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .logo {
-        width: 20%; /* Ajusta ainda mais o tamanho da logo */
-        max-width: 80px; /* Limita o tamanho máximo */
-        top: 5px; /* Ajusta a posição */
-        left: 5px;
+        width: 20%;
+        max-width: 80px;
+        top: 1%;
+        left: 1%;
     }
 
     .buttons {
-        top: 60px; /* Ajusta a posição dos botões */
+        top: 6%;
+        gap: 1%;
     }
 
     .buttons button {
-        padding: 8px 15px;
-        font-size: 0.75rem; /* Ajusta o tamanho da fonte */
-        min-width: 80px;
+        padding: 0.8% 1.5%;
+        font-size: 0.75rem;
+        min-width: 8%;
     }
 
     .centralizado {
-        margin-top: 40px; /* Ajusta o espaço acima do conteúdo */
+        margin-top: 4%;
     }
 
     .centralizado h1 {
-        font-size: 1.5rem; /* Ajusta o tamanho da fonte do título */
+        font-size: 1.5rem;
+    }
+}
+
+/* Para telas muito pequenas (smartphones em modo retrato) */
+@media (max-width: 480px) {
+    .logo {
+        width: 25%;
+        max-width: 70px;
+        top: 1%;
+        left: 1%;
+    }
+
+    .buttons {
+        top: 5%;
+        gap: 0.8%;
+    }
+
+    .buttons button {
+        padding: 0.6% 1.2%;
+        font-size: 0.7rem;
+        min-width: 7%;
+    }
+
+    .centralizado {
+        margin-top: 2%;
+    }
+
+    .centralizado h1 {
+        font-size: 1.25rem;
     }
 }
