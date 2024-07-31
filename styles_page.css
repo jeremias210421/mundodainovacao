@@ -56,6 +56,21 @@ body, html {
     transform: scale(1.1);
 }
 
+/* Centraliza o texto "Campanhas Eleitorais" na página */
+.centralizado {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: calc(100vh - 100px); /* Ajuste a altura conforme necessário, subtraindo a altura do rodapé, se necessário */
+    text-align: center;
+    color: #fff; /* Cor do texto */
+}
+
+.centralizado h1 {
+    font-size: 36px; /* Ajuste o tamanho da fonte conforme necessário */
+    margin: 0;
+}
+
 /* Estilização do rodapé */
 .footer {
     position: absolute;
