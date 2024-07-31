@@ -79,8 +79,9 @@ section {
 /* Estilização do rodapé */
 .footer {
     position: relative;
+    top: 100px; /* Posiciona a logo no topo */
     bottom: 0;
-    left: 10%;
+    left: 100%;
     transform: translateX(-50%);
     width: 100%;
     text-align: center;
