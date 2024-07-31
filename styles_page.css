@@ -79,14 +79,13 @@ section {
 /* Estilização do rodapé */
 .footer {
     position: relative;
-    top: 100px; /* Posiciona a logo no topo */
     bottom: 0;
-    left: 100%;
+    left: 50%;
     transform: translateX(-50%);
     width: 100%;
     text-align: center;
-    padding: 10px;
-    font-size: 10px;
+    padding: 20px;
+    font-size: 14px;
     color: #fff; /* Cor do texto do rodapé */
     background: #000; /* Cor de fundo do rodapé */
     box-sizing: border-box;
