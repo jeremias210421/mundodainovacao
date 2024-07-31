@@ -4,7 +4,7 @@ body, html {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Atualize para a nova fonte */
     background: url('Cópia de Black Oranye Archetype Inspired Logo (500 x 500 px) (1).png') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
@@ -35,20 +35,22 @@ header {
     z-index: 1;
 }
 
-.welcome-text, .subtext {
+.welcome-text {
     margin: 0;
     color: rgb(255, 127, 48);
     text-transform: uppercase;
     white-space: nowrap;
-    position: relative;
-}
-
-.welcome-text {
     font-size: 60px;
+    font-weight: 700; /* Fonte em negrito */
 }
 
 .subtext {
+    margin: 0;
+    color: rgb(255, 127, 48);
+    text-transform: uppercase;
+    white-space: nowrap;
     font-size: 60px;
+    font-weight: 400; /* Fonte regular */
 }
 
 .buttons {
@@ -67,6 +69,7 @@ header {
     transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
     border-radius: 25px;
     color: #000;
+    font-family: 'Roboto', sans-serif; /* Aplicar fonte aos botões */
 }
 
 .buttons button:hover {
@@ -82,6 +85,7 @@ header {
     transform: translateX(-50%);
     font-size: 14px;
     margin-top: 50px;
+    font-family: 'Roboto', sans-serif; /* Aplicar fonte ao rodapé */
 }
 
 .footer a {
