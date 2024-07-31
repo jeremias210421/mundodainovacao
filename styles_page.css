@@ -12,8 +12,9 @@ body, html {
 
 /* Estilização da logo */
 .logo {
-    width: 120px;
-    height: 120px;
+    width: 10%; /* Tamanho responsivo baseado em porcentagem */
+    max-width: 120px; /* Limita o tamanho máximo */
+    height: auto; /* Mantém a proporção da imagem */
     position: fixed;
     top: 20px;
     left: 20px;
@@ -40,7 +41,7 @@ body, html {
     background: #000;
     border: none;
     padding: 12px 30px;
-    font-size: 14px;
+    font-size: 1rem; /* Unidades relativas */
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 25px;
@@ -64,11 +65,11 @@ main {
 /* Centraliza o texto "Campanhas Eleitorais" */
 .centralizado {
     text-align: center;
-    margin-top: 120px; /* Ajuste o espaço acima do conteúdo */
+    margin-top: 120px; /* Espaço acima do conteúdo */
 }
 
 .centralizado h1 {
-    font-size: 36px;
+    font-size: 2rem; /* Tamanho da fonte relativo */
     margin: 0;
 }
 
@@ -90,25 +91,25 @@ section {
 
 /* Media Queries para diferentes tamanhos de tela */
 
-/* Para telas pequenas (tablets) */
+/* Para telas médias (tablets) */
 @media (max-width: 768px) {
     .logo {
-        width: 100px; /* Reduz o tamanho da logo */
-        height: 100px;
+        width: 15%; /* Ajusta o tamanho da logo */
+        max-width: 100px; /* Limita o tamanho máximo */
         top: 10px; /* Ajusta a posição */
         left: 10px;
     }
 
     .buttons {
         top: 80px; /* Ajusta a posição dos botões */
-        gap: 15px; /* Reduz o espaçamento entre os botões */
-        flex-direction: column; /* Empilha os botões verticalmente */
+        gap: 15px; /* Reduz o espaçamento */
+        flex-direction: column; /* Empilha verticalmente */
     }
 
     .buttons button {
-        padding: 10px 20px; /* Ajusta o padding dos botões */
-        font-size: 12px; /* Reduz o tamanho da fonte dos botões */
-        min-width: 100px; /* Ajusta a largura mínima dos botões */
+        padding: 10px 20px;
+        font-size: 0.875rem; /* Ajusta o tamanho da fonte */
+        min-width: 100px;
     }
 
     .centralizado {
@@ -116,15 +117,15 @@ section {
     }
 
     .centralizado h1 {
-        font-size: 28px; /* Reduz o tamanho da fonte do título */
+        font-size: 1.75rem; /* Ajusta o tamanho da fonte do título */
     }
 }
 
-/* Para telas muito pequenas (smartphones) */
+/* Para telas pequenas (smartphones) */
 @media (max-width: 480px) {
     .logo {
-        width: 80px; /* Reduz ainda mais o tamanho da logo */
-        height: 80px;
+        width: 20%; /* Ajusta ainda mais o tamanho da logo */
+        max-width: 80px; /* Limita o tamanho máximo */
         top: 5px; /* Ajusta a posição */
         left: 5px;
     }
@@ -134,9 +135,9 @@ section {
     }
 
     .buttons button {
-        padding: 8px 15px; /* Ajusta o padding dos botões */
-        font-size: 10px; /* Reduz o tamanho da fonte dos botões */
-        min-width: 80px; /* Ajusta a largura mínima dos botões */
+        padding: 8px 15px;
+        font-size: 0.75rem; /* Ajusta o tamanho da fonte */
+        min-width: 80px;
     }
 
     .centralizado {
@@ -144,6 +145,6 @@ section {
     }
 
     .centralizado h1 {
-        font-size: 24px; /* Reduz o tamanho da fonte do título */
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte do título */
     }
 }
