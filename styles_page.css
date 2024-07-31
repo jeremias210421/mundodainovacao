@@ -11,8 +11,8 @@ body, html {
 
 /* Estilização da logo */
 .logo {
-    width: 50px; /* Define o tamanho da logo para 50px */
-    height: 50px; /* Mantém a altura da logo para garantir o aspecto de 50px */
+    width: 120px; /* Define o tamanho da logo para 120px */
+    height: 120px; /* Mantém a altura da logo para garantir o aspecto de 120px */
     position: absolute;
     top: 5px; /* Posiciona a logo no topo */
     left: 20px; /* Alinha a logo no canto esquerdo */
@@ -38,7 +38,7 @@ body, html {
     background: #000; /* Cor dos botões ajustada para preto */
     border: none;
     padding: 12px 30px;
-    font-size: 18px; /* Ajustado para 18px */
+    font-size: 14px; /* Ajustado para 14px */
     cursor: pointer;
     transition: all 0.3s ease; /* Transição suave para todas as propriedades */
     border-radius: 25px;
@@ -87,7 +87,7 @@ section {
     padding: 20px;
     font-size: 14px;
     color: #fff; /* Cor do texto do rodapé */
-    background: #000; /* Cor de fundo do rodapé */
+    background: #ff7f30; /* Cor de fundo do rodapé */
     box-sizing: border-box;
 }
 
