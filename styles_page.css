@@ -1,3 +1,4 @@
+/* Reseta as margens e paddings padrão */
 body, html {
     margin: 0;
     padding: 0;
@@ -11,47 +12,47 @@ body, html {
 
 /* Estilização da logo */
 .logo {
-    width: 120px; /* Define o tamanho da logo para 120px */
-    height: 120px; /* Mantém a altura da logo para garantir o aspecto de 120px */
-    position: absolute;
-    top: 5px; /* Posiciona a logo no topo */
-    left: 20px; /* Alinha a logo no canto esquerdo */
-    background-size: contain; /* Ajusta a imagem dentro do espaço */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
-    background-position: center; /* Centraliza a imagem dentro do espaço */
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     z-index: 1;
 }
 
 /* Estilização dos botões na parte superior */
 .buttons {
-    position: absolute;
-    top: 25px; /* Posiciona os botões na parte superior */
+    position: fixed;
+    top: 20px;
     left: 50%;
-    transform: translateX(-50%); /* Centraliza os botões horizontalmente */
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center; /* Centraliza os botões */
-    gap: 30px; /* Espaçamento entre os botões */
-    flex-wrap: nowrap; /* Garante que os botões não quebrem para a linha de baixo */
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que os botões se movam para a linha abaixo em telas menores */
+    z-index: 1;
 }
 
 .buttons button {
-    background: #000; /* Cor dos botões ajustada para preto */
+    background: #000;
     border: none;
     padding: 12px 30px;
-    font-size: 14px; /* Ajustado para 14px */
+    font-size: 14px;
     cursor: pointer;
-    transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+    transition: all 0.3s ease;
     border-radius: 25px;
-    color: #fff; /* Cor do texto dos botões */
-    white-space: nowrap; /* Impede a quebra de linha do texto */
-    width: auto; /* Ajusta a largura do botão conforme o texto */
-    min-width: 120px; /* Define uma largura mínima para o botão */
-    text-align: center; /* Centraliza o texto dentro do botão */
+    color: #fff;
+    white-space: nowrap;
+    min-width: 120px;
+    text-align: center;
 }
 
 .buttons button:hover {
-    background: #fff; /* Cor de fundo dos botões ao passar o cursor */
-    color: #000; /* Cor do texto dos botões ao passar o cursor */
+    background: #fff;
+    color: #000;
     transform: scale(1.1);
 }
 
@@ -60,22 +61,23 @@ main {
     padding: 20px;
 }
 
-/* Centraliza o texto "Campanhas Eleitorais" na página */
+/* Centraliza o texto "Campanhas Eleitorais" */
 .centralizado {
     text-align: center;
-    margin-top: 50px; /* Ajuste para criar espaço acima do conteúdo */
+    margin-top: 120px; /* Ajuste o espaço acima do conteúdo */
 }
 
 .centralizado h1 {
-    font-size: 36px; /* Ajuste o tamanho da fonte conforme necessário */
+    font-size: 36px;
     margin: 0;
 }
 
 /* Estilização das seções */
 section {
-    margin-bottom: 40px; /* Espaço entre as seções */
+    margin-bottom: 40px;
 }
 
+/* Estilo do rodapé */
 .footer a {
     color: #fff;
     text-decoration: none;
@@ -88,25 +90,29 @@ section {
 
 /* Media Queries para diferentes tamanhos de tela */
 
-/* Para telas pequenas (móveis) */
+/* Para telas pequenas (tablets) */
 @media (max-width: 768px) {
     .logo {
-        width: 80px; /* Reduz o tamanho da logo */
-        height: 80px;
+        width: 100px; /* Reduz o tamanho da logo */
+        height: 100px;
         top: 10px; /* Ajusta a posição */
         left: 10px;
     }
 
     .buttons {
-        top: 70px; /* Ajusta a posição dos botões */
+        top: 80px; /* Ajusta a posição dos botões */
+        gap: 15px; /* Reduz o espaçamento entre os botões */
         flex-direction: column; /* Empilha os botões verticalmente */
-        gap: 10px; /* Reduz o espaçamento entre os botões */
     }
 
     .buttons button {
         padding: 10px 20px; /* Ajusta o padding dos botões */
         font-size: 12px; /* Reduz o tamanho da fonte dos botões */
         min-width: 100px; /* Ajusta a largura mínima dos botões */
+    }
+
+    .centralizado {
+        margin-top: 80px; /* Ajusta o espaço acima do conteúdo */
     }
 
     .centralizado h1 {
@@ -117,20 +123,24 @@ section {
 /* Para telas muito pequenas (smartphones) */
 @media (max-width: 480px) {
     .logo {
-        width: 60px; /* Reduz ainda mais o tamanho da logo */
-        height: 60px;
+        width: 80px; /* Reduz ainda mais o tamanho da logo */
+        height: 80px;
         top: 5px; /* Ajusta a posição */
         left: 5px;
     }
 
     .buttons {
-        top: 50px; /* Ajusta a posição dos botões */
+        top: 60px; /* Ajusta a posição dos botões */
     }
 
     .buttons button {
         padding: 8px 15px; /* Ajusta o padding dos botões */
         font-size: 10px; /* Reduz o tamanho da fonte dos botões */
         min-width: 80px; /* Ajusta a largura mínima dos botões */
+    }
+
+    .centralizado {
+        margin-top: 40px; /* Ajusta o espaço acima do conteúdo */
     }
 
     .centralizado h1 {
