@@ -12,8 +12,8 @@ body, html {
 
 /* Estilização da logo */
 .logo {
-    width: 200px; /* Define o tamanho da logo para 50px */
-    height: 200px; /* Mantém a altura da logo para garantir o aspecto de 50px */
+    width: 120px; /* Define o tamanho da logo para 50px */
+    height: 120px; /* Mantém a altura da logo para garantir o aspecto de 50px */
     position: absolute;
     top: 5px; /* Posiciona a logo no topo, deixando uma margem de 20px */
     left: 20px; /* Alinha a logo no canto esquerdo com uma margem de 20px */
