@@ -12,11 +12,11 @@ body, html {
 
 /* Estilização da logo */
 .logo {
-    width: 120px; /* Define o tamanho da logo para 50px */
-    height: 120px; /* Mantém a altura da logo para garantir o aspecto de 50px */
+    width: 50px; /* Define o tamanho da logo para 50px */
+    height: 50px; /* Mantém a altura da logo para garantir o aspecto de 50px */
     position: absolute;
-    top: 5px; /* Posiciona a logo no topo, deixando uma margem de 20px */
-    left: 20px; /* Alinha a logo no canto esquerdo com uma margem de 20px */
+    top: 5px; /* Posiciona a logo no topo */
+    left: 20px; /* Alinha a logo no canto esquerdo */
     background-size: contain; /* Ajusta a imagem dentro do espaço */
     background-repeat: no-repeat; /* Evita repetição da imagem */
     background-position: center; /* Centraliza a imagem dentro do espaço */
@@ -39,7 +39,7 @@ body, html {
     background: #000; /* Cor dos botões ajustada para preto */
     border: none;
     padding: 15px 30px;
-    font-size: 14px; /* Ajustado para 18px */
+    font-size: 18px; /* Ajustado para 18px */
     cursor: pointer;
     transition: all 0.3s ease; /* Transição suave para todas as propriedades */
     border-radius: 25px;
@@ -59,11 +59,24 @@ body, html {
 /* Estilização das informações abaixo dos botões */
 .overlay {
     position: absolute;
-    top: 10%; /* Ajusta a posição das informações para 100px abaixo dos botões */
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
+    top: 40%; /* Posiciona o texto verticalmente a partir de 40% */
+    left: 50%; /* Centraliza o texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o bloco de texto */
+    width: 50%; /* Define a largura do bloco de texto como 50% da página */
+    text-align: center; /* Centraliza o título */
     z-index: 1;
+}
+
+/* Estilização do título */
+.overlay h1 {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Estilização do texto justificado */
+.overlay p {
+    text-align: justify; /* Justifica o texto */
+    margin: 0;
 }
 
 .footer {
