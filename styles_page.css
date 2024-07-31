@@ -12,11 +12,14 @@ body, html {
 
 /* Estilização da logo */
 .logo {
-    width: 30px; /* Define o tamanho da logo para 200px */
-    height: auto;
+    width: 80%; /* Largura adaptável */
+    max-width: 150px; /* Largura máxima */
     position: absolute;
-    top: 10px; /* Posiciona a logo no topo, deixando uma margem de 20px */
-    left: 10px; /* Alinha a logo no canto esquerdo com uma margem de 20px */
+    top: 10%; /* 30% do topo */
+    left: 10%;
+    transform: translate(-20%, -80%); /* Ajusta a posição para centralizar verticalmente */
+    text-align: center;
+    z-index: 1;
 }
 
 /* Estilização dos botões na parte superior */
