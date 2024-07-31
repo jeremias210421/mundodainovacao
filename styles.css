@@ -1,4 +1,3 @@
-/* Estilos gerais */
 body, html {
     margin: 0;
     padding: 0;
@@ -18,9 +17,9 @@ body, html {
     width: 80%; /* Largura adaptável */
     max-width: 500px; /* Largura máxima */
     position: absolute;
-    top: 50%;
+    top: 40%; /* 40% do topo */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%); /* Ajusta a posição para centralizar verticalmente */
     text-align: center;
     z-index: 1;
 }
@@ -37,8 +36,9 @@ body, html {
 .buttons {
     margin-top: 20px;
     display: flex;
-    flex-direction: column; /* Colunas em dispositivos menores */
-    gap: 10px;
+    justify-content: center; /* Alinha os botões no centro */
+    gap: 30px; /* Espaçamento entre os botões */
+    flex-wrap: nowrap; /* Garante que os botões não quebrem para a linha de baixo */
 }
 
 .buttons button {
@@ -80,8 +80,7 @@ body, html {
 /* Media Queries para diferentes tamanhos de tela */
 @media (max-width: 768px) {
     .buttons {
-        flex-direction: column;
-        gap: 15px;
+        gap: 20px; /* Ajusta o espaçamento entre os botões em telas menores */
     }
 
     .logo {
