@@ -13,9 +13,9 @@ body, html {
 /* Estilização da logo */
 .logo {
     width: 80%; /* Largura adaptável */
-    max-width: 150px; /* Largura máxima */
+    max-width: 50px; /* Largura máxima */
     position: absolute;
-    top: 10%; /* 30% do topo */
+    top: 20%; /* 30% do topo */
     left: 10%;
     transform: translate(-20%, -80%); /* Ajusta a posição para centralizar verticalmente */
     text-align: center;
