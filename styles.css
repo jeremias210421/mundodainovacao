@@ -80,5 +80,59 @@ body, html {
 .footer a:hover {
     text-decoration: underline;
 }
+header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #ff7f30; /* Cor de fundo laranja do cabeçalho */
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff7f30;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons button {
+    background: #000; /* Cor dos botões ajustada para preto */
+    border: none;
+    padding: 15px 30px;
+    font-size: 14px; /* Ajustado para 14px */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+    border-radius: 25px;
+    color: #fff; /* Cor do texto dos botões */
+    white-space: nowrap; /* Impede a quebra de linha do texto */
+    width: auto; /* Ajusta a largura do botão conforme o texto */
+    min-width: 120px; /* Define uma largura mínima para o botão */
+    text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+.buttons button:hover {
+    background: #fff; /* Cor de fundo dos botões ao passar o cursor */
+    color: #000; /* Cor do texto dos botões ao passar o cursor */
+    transform: scale(1.1);
+}
 
 /* Remova ou ajuste as media queries para manter o layout de desktop */
