@@ -59,7 +59,7 @@ body, html {
 /* Estilização das informações abaixo dos botões */
 .overlay {
     position: absolute;
-    top: 120px; /* Ajusta a posição das informações para 100px abaixo dos botões */
+    top: 10%; /* Ajusta a posição das informações para 100px abaixo dos botões */
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
