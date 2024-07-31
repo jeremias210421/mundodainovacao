@@ -85,3 +85,55 @@ section {
 .footer a:hover {
     text-decoration: underline;
 }
+
+/* Media Queries para diferentes tamanhos de tela */
+
+/* Para telas pequenas (móveis) */
+@media (max-width: 768px) {
+    .logo {
+        width: 80px; /* Reduz o tamanho da logo */
+        height: 80px;
+        top: 10px; /* Ajusta a posição */
+        left: 10px;
+    }
+
+    .buttons {
+        top: 70px; /* Ajusta a posição dos botões */
+        flex-direction: column; /* Empilha os botões verticalmente */
+        gap: 10px; /* Reduz o espaçamento entre os botões */
+    }
+
+    .buttons button {
+        padding: 10px 20px; /* Ajusta o padding dos botões */
+        font-size: 12px; /* Reduz o tamanho da fonte dos botões */
+        min-width: 100px; /* Ajusta a largura mínima dos botões */
+    }
+
+    .centralizado h1 {
+        font-size: 28px; /* Reduz o tamanho da fonte do título */
+    }
+}
+
+/* Para telas muito pequenas (smartphones) */
+@media (max-width: 480px) {
+    .logo {
+        width: 60px; /* Reduz ainda mais o tamanho da logo */
+        height: 60px;
+        top: 5px; /* Ajusta a posição */
+        left: 5px;
+    }
+
+    .buttons {
+        top: 50px; /* Ajusta a posição dos botões */
+    }
+
+    .buttons button {
+        padding: 8px 15px; /* Ajusta o padding dos botões */
+        font-size: 10px; /* Reduz o tamanho da fonte dos botões */
+        min-width: 80px; /* Ajusta a largura mínima dos botões */
+    }
+
+    .centralizado h1 {
+        font-size: 24px; /* Reduz o tamanho da fonte do título */
+    }
+}
