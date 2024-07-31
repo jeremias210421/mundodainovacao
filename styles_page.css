@@ -38,8 +38,8 @@ body, html {
 .buttons button {
     background: #000; /* Cor dos botões ajustada para preto */
     border: none;
-    padding: 15px 30px;
-    font-size: 18px; /* Ajustado para 18px */
+    padding: 12px 30px;
+    font-size: 14px; /* Ajustado para 18px */
     cursor: pointer;
     transition: all 0.3s ease; /* Transição suave para todas as propriedades */
     border-radius: 25px;
@@ -70,7 +70,7 @@ body, html {
 /* Estilização do título */
 .overlay h1 {
     text-align: center; /* Centraliza o título */
-    margin-bottom: 20px; /* Espaço abaixo do título */
+    margin-bottom: 16px; /* Espaço abaixo do título */
 }
 
 /* Estilização do texto justificado */
