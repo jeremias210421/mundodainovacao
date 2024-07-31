@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campanhas Eleitorais - Mundo da Inovação</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="estilos_page.css"> <!-- Link para o arquivo CSS -->
     <link rel="icon" href="Logo.png" type="image/png">
 </head>
@@ -14,13 +13,15 @@
         <div class="logo">
             <img src="Logo.png" alt="Logo do Mundo da Inovação">
         </div>
-        <div class="buttons">
-            <button onclick="window.location.href='index.html'">Início</button>
-            <button onclick="window.location.href='http://www.canva.mundodainovacao.com'">Automações</button>
-            <button onclick="window.location.href='pagina2.html'">Campanhas Eleitorais</button>
-            <button onclick="window.location.href='pagina3.html'">Projetos Arquitetônicos</button>
-            <button onclick="window.location.href='pagina4.html'">Criar Site</button>
-        </div>
+        <nav>
+            <div class="buttons">
+                <button onclick="window.location.href='index.html'">Início</button>
+                <button onclick="window.location.href='http://www.canva.mundodainovacao.com'">Automações</button>
+                <button onclick="window.location.href='pagina2.html'">Campanhas Eleitorais</button>
+                <button onclick="window.location.href='pagina3.html'">Projetos Arquitetônicos</button>
+                <button onclick="window.location.href='pagina4.html'">Criar Site</button>
+            </div>
+        </nav>
     </header>
     <main>
         <h1>Campanhas Eleitorais</h1>
@@ -44,16 +45,5 @@
     <footer class="footer">
         <p><a href="politica-de-privacidade.html">Políticas de Privacidade</a></p>
     </footer>
-    <script>
-        document.querySelectorAll('.buttons button').forEach(button => {
-            button.addEventListener('mouseover', () => {
-                button.style.color = '#ff7f30';
-            });
-
-            button.addEventListener('mouseout', () => {
-                button.style.color = '#fff';
-            });
-        });
-    </script>
 </body>
 </html>
