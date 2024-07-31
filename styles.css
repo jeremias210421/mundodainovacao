@@ -36,13 +36,13 @@ body, html {
 .buttons {
     margin-top: 20px;
     display: flex;
-    justify-content: flex; /* Alinha os botões no centro */
+    justify-content: center; /* Centraliza os botões */
     gap: 30px; /* Espaçamento entre os botões */
     flex-wrap: nowrap; /* Garante que os botões não quebrem para a linha de baixo */
 }
 
 .buttons button {
-background: #000; /* Cor dos botões ajustada para preto */
+    background: #000; /* Cor dos botões ajustada para preto */
     border: none;
     padding: 15px 30px;
     font-size: 14px; /* Ajustado para 14px */
