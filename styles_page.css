@@ -12,7 +12,7 @@ body, html {
 
 /* Estilização da logo */
 .logo {
-    width: 100px; /* Define o tamanho da logo para 200px */
+    width: 30px; /* Define o tamanho da logo para 200px */
     height: auto;
     position: absolute;
     top: 10px; /* Posiciona a logo no topo, deixando uma margem de 20px */
@@ -56,7 +56,7 @@ body, html {
 /* Estilização das informações abaixo dos botões */
 .overlay {
     position: absolute;
-    top: 150px; /* Ajusta a posição das informações abaixo dos botões */
+    top: 250px; /* Ajusta a posição das informações abaixo dos botões */
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
