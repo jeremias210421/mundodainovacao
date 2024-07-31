@@ -59,8 +59,8 @@ body, html {
 /* Estilização das informações abaixo dos botões */
 .overlay {
     position: absolute;
-    top: 40%; /* Posiciona o texto verticalmente a partir de 40% da altura da página */
-    left: 50%; /* Centraliza o bloco de texto horizontalmente */
+    top: 80%; /* Posiciona o texto verticalmente a partir de 40% da altura da página */
+    left: 200%; /* Centraliza o bloco de texto horizontalmente */
     transform: translateX(-50%); /* Centraliza o bloco de texto */
     width: 50%; /* Define a largura do bloco de texto como 50% da página */
     text-align: justify; /* Justifica o texto */
