@@ -87,7 +87,7 @@ section {
     padding: 20px;
     font-size: 14px;
     color: #fff; /* Cor do texto do rodapé */
-    background: #ff7f30; /* Cor de fundo do rodapé */
+    background: #000; /* Cor de fundo do rodapé */
     box-sizing: border-box;
 }
 
