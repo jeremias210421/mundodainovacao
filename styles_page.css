@@ -61,9 +61,10 @@ body, html {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-    height: calc(100vh - 100px); /* Ajuste a altura conforme necessário, subtraindo a altura do rodapé, se necessário */
+    height: calc(100vh - 100px); /* Ajusta a altura conforme necessário, subtraindo a altura do rodapé, se necessário */
     text-align: center;
     color: #fff; /* Cor do texto */
+    margin-top: 100px; /* Ajuste para não sobrepor ao conteúdo da página */
 }
 
 .centralizado h1 {
