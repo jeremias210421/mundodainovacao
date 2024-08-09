@@ -2,10 +2,10 @@
 :root {
     --main-color: #fe7f30; /* Cor de fundo amarelo */
     --text-color: #fff;
-    --button-bg: #963666;
+    --button-bg: #000000;
     --button-text: #fff;
     --button-hover-bg: #fff;
-    --button-hover-text: #963666;
+    --button-hover-text: #000000;
     --font-size-base: 16px;
     --overlay-bg: #000000; /* Fundo do menu hambúrguer */
 }
