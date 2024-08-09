@@ -98,7 +98,7 @@ body, html {
 @media (max-width: 768px) {
     .logo {
         width: auto; /* Ajusta a largura automaticamente */
-        max-width: 400px; /* Define o tamanho máximo da logo em 400px */
+        max-width: 300px; /* Define o tamanho máximo da logo em 400px */
     }
 
     .hamburger {
