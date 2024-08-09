@@ -7,7 +7,7 @@
     --button-hover-bg: #fff;
     --button-hover-text: #963666;
     --font-size-base: 16px;
-    --overlay-bg: #963666; /* Fundo do menu hambúrguer */
+    --overlay-bg: #000000; /* Fundo do menu hambúrguer */
 }
 
 body, html {
