@@ -1,2 +1,0 @@
-"zone name","placement name","placement id","code (direct link)"
-direct-link-2003137,DirectLink_1,23805244,https://www.highratecpm.com/bzc4a1v4v1?key=622794b66be0abe37fd262759c5e808a
