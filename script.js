@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
@@ -14,4 +15,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         overlay.classList.remove('active');
         document.body.style.overflow = '';
     });
+});
+// Script para abrir e fechar o menu em modo sanduíche
+document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('.buttons').classList.toggle('open');
 });
